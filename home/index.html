@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="header-inner">
+    <div class="logo">Logo</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Serviços</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="catalogo">
+      <h2>Destaques</h2>
+      <div class="carousel-destaques">
+        <div class="carousel-item active">
+          <img src="imagens/pose 3.png" alt="Pijama Estrela" />
+          <div class="caption">
+            <h3>Pijama Estrela</h3>
+            <p>Conforto e estilo para suas noites.</p>
+            <button>Ver Produto</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/pose 4.png" alt="Pijama Fluffy" />
+          <div class="caption">
+            <h3>Pijama Fluffy</h3>
+            <p>Toque macio e quentinho para o inverno.</p>
+            <button>Ver Produto</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/pose 5.png" alt="Pijama Floral" />
+          <div class="caption">
+            <h3>Pijama Floral</h3>
+            <p>Estampa delicada e confortável.</p>
+            <button>Ver Produto</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/pose 6.png" alt="Pijama Floral" />
+          <div class="caption">
+            <h3>Pijama Floral</h3>
+            <p>Estampa delicada e confortável.</p>
+            <button>Ver Produto</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promoções - carrossel 3 por vez -->
+    <div class="carrossel-container">
+        <button class="arrow left" onclick="scrollCarrossel('carrossel1', -1)">&#8249;</button>
+        <div class="carrossel" id="carrossel1">
+          <div class="produto"><img src="imagens/d1.jpg"><p>Compre por WhatsApp</p></div>
+          <div class="produto"><img src="imagens/d2.jpg"><p>Compre por WhatsApp</p></div>
+          <div class="produto"><img src="imagens/d3.jpg"><p>Compre por WhatsApp</p></div>
+          <div class="produto"><img src="imagens/d4.jpg"><p>Compre por WhatsApp</p></div>
+          <div class="produto"><img src="imagens/d5.jpg"><p>Compre por WhatsApp</p></div>
+          <div class="produto"><img src="imagens/d6.jpg"><p>Compre por WhatsApp</p></div>
+        </div>
+        <button class="arrow right" onclick="scrollCarrossel('carrossel1', 1)">&#8250;</button>
+      </div>
+
+      <!--- Destaques -->
+      <div class="destaques">
+        <div class="produto"></div><img src="imagens/pose 1.png"></div>
+        <div class="produto"></div><img src="imagens/pose 2.png"></div>
+      </div>
+    <!-- Serviços -->
+    <section class="catalogo">
+      <h2>Serviços</h2>
+      <div class="lista-carousel">
+        <div class="carousel-item">
+          <img src="imagens/entrega.png" alt="Cliente 1" />
+          <div class="caption">
+            <h3>Entrega</h3>
+            <p>Frete gratis para toda Maringá</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/pagamento.jpg" alt="Cliente 2" />
+          <div class="caption">
+            <h3>Pagamento</h3>
+            <p>Pagamento até 5 vezes sem juros</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/negocio.png" alt="Cliente 3" />
+          <div class="caption">
+            <h3>Negócio</h3>
+            <p>Compras 100% feitas com o fabricantes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+  <footer>
+    &copy; 2025 Loja de Pijamas - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
